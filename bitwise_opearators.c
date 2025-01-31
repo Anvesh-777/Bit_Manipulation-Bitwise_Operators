@@ -1,7 +1,7 @@
 /************************************
  * This is for Bit manipulation programs
  * Author:Anvesh G
- *Date: 19-090-2024
+ *Date: 19-09-2024
  ************************************/
  #include<stdio.h>
 #include<stdlib.h>
