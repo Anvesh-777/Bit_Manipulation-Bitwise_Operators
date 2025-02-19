@@ -1,0 +1,23 @@
+For the left shift (<<) operator:
+5<<2  -->5*(2^2)  =>5*4=20
+5<<10 -->5*(2^10) =>5*1024=5120
+1<<30 -->1*(2^30) =>1*(1073741824)=1073741824
+1<<31 -->1*(2^31) =>1*(2147483648)=-2147483648(Because of the MSB bit its sign is negative)
+
+For the right shift (>>) operator:
+5>>1 -->5/(2^1) =>5/2=2
+1>>30 -->1/(2^30) =>1/(1073741824)=0
+1>>31 -->1/(2^31) =>1/(2147483648)=0
+
+For negative numbers, the behavior depends on whether the shift is arithmetic (sign-preserving) or logical (zero-filling). In most systems, the right shift for signed integers is arithmetic, meaning the sign bit (MSB) is preserved.
+
+For example, in 32-bit signed integers:
+
+(-5 >> 1)
+Binary: 1111 1011 (for -5 in two's complement)
+Shift right by 1: 1111 1101 (still negative, becomes -3)
+Result: -3 (not 2, because of sign extension)
+
+
+
+
